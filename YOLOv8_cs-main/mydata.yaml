@@ -1,0 +1,24 @@
+path: E:/learn/LT/YOLOv8_cs-main/datasets/mydata
+train: images/train2017  # train images (relative to 'path') 128 images
+val: images/train2017  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+names: ['worker','hat','armband','truck','tyre','spark',
+        'escalator','tinder','extinguisher','crane','loader','Distribution box','drilling machine']#class names
+# Classes
+#
+#names:
+#  0:worker
+#  1:hat
+#  2:armband
+#  3:truck
+#  4:tyre
+#  5:spark
+#  6:escalator
+#  7:tinder
+#  8:extinguisher
+#  9:crane
+#  10:loader
+#  11:Disterbution box
+#  12:drilling machine
+#
+#

@@ -1,0 +1,6 @@
+yolo task=detect mode=train model=yolov8n.pt epochs=10 batch=1 data=mydata.yaml
+yolo detect train data=mydata.yaml model=ultralytics/cfg/models/v8/yolov8.yaml pretrained=yolov8n.pt epochs=20 batch=4 lr0=0.01 resume=True
+
+# 测试数据集命令
+yolo task=detect mode=val split=test model=runs/detect/train3/weights/best.pt  data=mydata.yaml
+yolo predict model=runs/detect/train3/weights/best.pt source=datasets/mydata/images/train2017/image_528a7.jpg
